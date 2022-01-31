@@ -5,21 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Registro"
         mc:Ignorable="d"
-        Title="Registro" Height="450" Width="1100">
-    <Grid HorizontalAlignment="Center" Width="1100">
-        <Label Content="Rolld:" HorizontalAlignment="Left" Margin="22,70,0,0" VerticalAlignment="Top" Width="99" FontSize="30" Height="52" FontFamily="Times New Roman"/>
-        <TextBox  x:Name="rolld" HorizontalAlignment="Left" Margin="286,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Height="24"  FontSize="15" FontFamily="Times New Roman"/>
-        <Label Content="Descricion:" HorizontalAlignment="Left" Margin="22,202,0,0" VerticalAlignment="Top" Width="155" FontSize="30" Height="46" FontFamily="Times New Roman"/>
-        <TextBox  x:Name="descricion" HorizontalAlignment="Left" Margin="286,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" FontSize="15"  Height="26" FontFamily="Times New Roman" Text=""/>
-        <Label Content="Fecha de Creacion:" HorizontalAlignment="Left" Margin="22,134,0,0" VerticalAlignment="Top" Width="264" FontSize="30" FontFamily="Times New Roman"/>
-        <DatePicker  x:Name="fecha" HorizontalAlignment="Left" Margin="286,144,0,0" VerticalAlignment="Top" Width="256" FontFamily="Times New Roman"  FontSize="15" Height="25"/>
-        <Button  x:Name="guardar" Content="💾Guardar" HorizontalAlignment="Left" Margin="56,301,0,0" VerticalAlignment="Top" Click="guardar_Click"  FontSize="25" Foreground="#FF000DF6" FontFamily="Times New Roman"/>
-        <Button  x:Name="eliminar" Content="❌Eliminar" HorizontalAlignment="Left" Margin="334,301,0,0" VerticalAlignment="Top" Click="eliminar_Click"  FontSize="25" Foreground="#FF000DF6" FontFamily="Times New Roman"/>
-        <Button  x:Name="editar" Content="✔Editar" HorizontalAlignment="Left" Margin="205,301,0,0" VerticalAlignment="Top" Click="editar_Click"  FontSize="25" Foreground="#FF000DF6" FontFamily="Times New Roman" Width="102"/>
-       
-        <Label Content="Roles" HorizontalAlignment="Left" Margin="368,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Times New Roman" Foreground="Black"/>
-        <DataGrid x:Name="Ventanaconsultar" HorizontalAlignment="Left" Height="342" Margin="646,31,0,0" VerticalAlignment="Top" Width="420" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-    
+        Title="Registro" Height="712" Width="657">
+    <Grid >
+        <Label Content="Rolld:" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top" Width="99" FontSize="30" Height="43" FontFamily="Times New Roman"/>
+        <TextBox  x:Name="rolld" HorizontalAlignment="Left" Margin="35,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" Height="24"  FontSize="15" FontFamily="Times New Roman"/>
+        <Label Content="Descricion:" HorizontalAlignment="Left" Margin="26,208,0,0" VerticalAlignment="Top" Width="155" FontSize="30" Height="46" FontFamily="Times New Roman"/>
+        <TextBox  x:Name="descricion" HorizontalAlignment="Left" Margin="35,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" FontSize="15"  Height="26" FontFamily="Times New Roman" Text=""/>
+        <Label Content="Fecha de Creacion:" HorizontalAlignment="Left" Margin="26,128,0,0" VerticalAlignment="Top" Width="264" FontSize="30" FontFamily="Times New Roman"/>
+        <DatePicker  x:Name="fecha" HorizontalAlignment="Left" Margin="35,177,0,0" VerticalAlignment="Top" Width="500" FontFamily="Times New Roman"  FontSize="15" Height="26" />
+        <Button  x:Name="guardar" Content="💾Guardar" HorizontalAlignment="Left" Margin="44,318,0,0" VerticalAlignment="Top"   Click="guardar_Click" FontSize="25" Foreground="#FF000DF6" FontFamily="Times New Roman"/>
+        <Button  x:Name="eliminar" Content="❌Eliminar" HorizontalAlignment="Left" Margin="361,318,0,0" VerticalAlignment="Top"  Click="eliminar_Click"   FontSize="25" Foreground="#FF000DF6" FontFamily="Times New Roman"/>
+        <Button  x:Name="editar" Content="✔Editar" HorizontalAlignment="Left" Margin="212,318,0,0" VerticalAlignment="Top" Click="editar_Click"  FontSize="25" Foreground="#FF000DF6" FontFamily="Times New Roman" Width="102" />
+        <Label Content="Roles" HorizontalAlignment="Left" Margin="222,0,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Times New Roman" Foreground="Black" />
+        <DataGrid x:Name= "Ventanaconsultar" HorizontalAlignment="Left" Height="228" Margin="26,396,0,0" VerticalAlignment="Top" Width="589" d:ItemsSource="{d:SampleData ItemCount=5}"/>
 
 
 

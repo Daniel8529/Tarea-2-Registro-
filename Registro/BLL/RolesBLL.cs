@@ -110,6 +110,7 @@ namespace Registro
             return encontrado;
         }
        
+        
        public static bool Existe(string id)
         {
             Contexto contexto = new Contexto();
@@ -117,6 +118,26 @@ namespace Registro
             try
             {
                 encontrado = contexto.Roles.Any(e => e.Descripcion == id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return encontrado;
+        }
+
+        //Este Exite es para saber si hay un Rolid igual
+           public static bool Existes(string id)
+        {
+            Contexto contexto = new Contexto();
+            bool encontrado = false;
+            try
+            {
+                encontrado = contexto.Roles.Any(e => e.Rolid== id);
             }
             catch (Exception)
             {

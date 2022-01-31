@@ -30,17 +30,23 @@ namespace Registro
 
             Roles roles = new Roles(rolld.Text, descricion.Text, fecha.Text);
 
-
-            if (!RolesBLL.Existe(descricion.Text))
+            if (!RolesBLL.Existes(rolld.Text))
             {
-                var paso = RolesBLL.Insertar(roles);
+                if (!RolesBLL.Existe(descricion.Text))
+                {
+                    var paso = RolesBLL.Insertar(roles);
 
-                MessageBox.Show("Se ha agregado exitozamente");
+                    MessageBox.Show("Se ha agregado exitozamente");
 
+                }
+                else
+                {
+                    MessageBox.Show("La descripcion que ingreso ya existe");
+                }
             }
             else
             {
-                MessageBox.Show("La descripcion que ingreso ya existe");
+                MessageBox.Show("El RolID que ingreso ya existe");
             }
             var lista = RolesBLL.GetLista();
             Ventanaconsultar.ItemsSource = lista;
